@@ -18,3 +18,19 @@ for d in data:
 	print(sum_length)
 
 print('the average length is', sum_length/len(data))
+
+
+
+
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+print('total have', len(new), 'messages length is shorter than 100')
+print(new[0])
+
+
+
+
+
+
