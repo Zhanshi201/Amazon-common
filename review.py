@@ -7,11 +7,14 @@ with open ('reviews.txt', 'r') as f:
 		if count % 1000 == 0 :
 			print(len(data))
 
-print(len(data))
+	
+print ('档案读完了，中间有', len(data),'笔资料')
 
 
-print(data[0])
 
-print("------")
+sum_length = 0
+for d in data:
+	sum_length = sum_length + len(d)
+	print(sum_length)
 
-print(data[1])
+print('the average length is', sum_length/len(data))
